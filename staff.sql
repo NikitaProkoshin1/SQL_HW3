@@ -60,4 +60,14 @@ WHERE post = "Рабочий"
 AND age 
 BETWEEN 24 AND 49;
 
+-- 6
 
+SELECT COUNT(DISTINCT post)
+FROM  staff;
+
+-- 7
+
+SELECT post
+FROM staff
+GROUP BY post
+HAVING AVG(age) <=30;
